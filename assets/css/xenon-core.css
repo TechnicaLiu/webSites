@@ -3971,6 +3971,9 @@ body.chat-open #chat {
         line-height: 1;
         margin-left: 20px
     }
+    .page-container .sidebar-menu .sidebar-menu-inner .logo-env .mobile-menu-toggle .setting{
+        display: none!important;
+    }
     .page-container .sidebar-menu .sidebar-menu-inner .logo-env .mobile-menu-toggle a i {
         line-height: 1;
         font-size: 18px;
@@ -3980,7 +3983,7 @@ body.chat-open #chat {
     .page-container .sidebar-menu .sidebar-menu-inner .logo-env .mobile-menu-toggle a:hover,
     .page-container .sidebar-menu .sidebar-menu-inner .logo-env .mobile-menu-toggle a:active,
     .page-container .sidebar-menu .sidebar-menu-inner .logo-env .mobile-menu-toggle a:focus {
-        color: #fff
+        color: #00a4ec
     }
     .page-container .sidebar-menu .sidebar-menu-inner .logo-env .mobile-menu-toggle a .badge {
         position: absolute;
@@ -4018,6 +4021,7 @@ body.chat-open #chat {
         padding-top: 20px;
         padding-bottom: 20px
     }
+
     .page-container .main-content .navbar.user-info-navbar .user-info-menu>li.user-profile>a>span,
     .page-container .main-content .navbar.navbar.horizontal-menu .navbar-inner>.nav>li.user-profile>a>span {
         display: none
