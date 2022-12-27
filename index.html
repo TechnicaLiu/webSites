@@ -5,6 +5,21 @@
     <link rel="shortcut icon" href="./assets/images/favicon.png">
     <meta charset="UTF-8">
     <title>TechSites - 常用网址导航</title>
+    <script>
+      if (navigator.appName == "Netscape") {
+          var language = navigator.language;
+      } else {
+          var language = navigator.browserLanguage;
+  
+      }
+      if (language.indexOf("en") > -1) {
+          document.location.href = "en/index.html";
+      } else if (language.indexOf("zh") > -1) {
+          document.location.href = "cn/index.html";
+      } else {
+          document.location.href = "en/index.html";
+      }
+      </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,27 +29,16 @@
     <meta name="description" content="TechSites - 收集日常所用到的网站">
     
     <!-- / FB Open Graph -->
-    meta property="og:type" content="article">
-    <meta property="og:url" content="https://technicaliu.github.io/webSites/cn/index.html">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="./cn/index.html">
     <meta property="og:title" content="TechSites - 收集日常所用到的网站">
     <meta property="og:description" content="日常咨询网站, 灵感采集地，常用开发工具,前端框架网站, 学习教程网站">
-    <meta property="og:image" content="http://webstack.cc/assets/images/webstack_banner_cn.png">
+    <meta property="og:image" content="">
     <meta property="og:site_name" content="TechSites - 收集日常所用到的信息流网站, 灵感采集网站，常用开发工具,前端框架网站, 学习教程网站">
 </head>
 
 <body>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111463289-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
 
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-111463289-1');
-    </script>
 </body>
 
 </html>
