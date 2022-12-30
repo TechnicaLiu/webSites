@@ -61,3 +61,117 @@
 .img-circle {
     padding: 7px 0;
 }
+
+.hotBlock{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+.hotBlock .hotItem{
+    width: calc((100% - 60px)/3);
+    height: 400px;
+    margin: 10px;
+    background-color: #242529;
+    border-radius: 20px ;
+    padding: 20px 0px;
+}
+
+.hotBlock .hotItem .hot-title-inner{
+    padding: 0px 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.hotBlock .hotItem .hot-title-inner .title{
+    font-size: 1.6rem ;
+    font-weight: bold;
+    color: #aaa;
+}
+.hotBlock .hotItem .hot-title-inner .time{
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 1.2rem ;
+    color: #aaa;
+}
+.refresh{
+    color: #aaa;
+    cursor: pointer;
+}
+/* .refresh:hover{
+    animation-name: turnZ;
+    animation-duration: 3s;
+}
+@keyframes turnZ {
+     0%{
+         transform: rotateZ(0deg);
+     }
+     100%{
+        transform: rotateZ(360deg);
+    }
+} */
+.hotLogo{
+    margin-right: 12px;
+    font-size: 1.6rem;
+}
+
+.hotBlock .hotItem .content{
+    list-style: none;
+    padding: 0px 8px 0px 20px;
+    margin-top: 10px;
+    width: 100%;
+    height: calc(100% - 34px);
+    overflow-y: scroll;
+    color: #aaa;
+}
+
+.hotBlock .hotItem .content>li{
+   margin-top: 12px; 
+
+}
+.hotBlock .hotItem .content>li>a{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    color: #aaa;
+}
+.hotBlock .hotItem .content>li>a:hover{
+    color: #f7d15e;
+}
+.hotBlock .hotItem .content>li>a>span:nth-of-type(1){
+    display: inline-block;
+    min-width: 20px;
+}
+.hotBlock .hotItem .content>li>a>span:nth-of-type(2){
+   text-align: left;
+   flex-grow: 1;
+}
+.hotBlock .hotItem .content>li>a .first{
+    color: #cc3939;
+}
+.hotBlock .hotItem .content>li>a .second{
+   color: #de6b30; 
+}
+
+.hotBlock .hotItem .content>li>a .third{
+    color: #cc984f;
+} 
+.hotBlock .hotItem .content>li>a>span:nth-of-type(3){
+    display: inline-block;
+    max-width: 100px;
+    min-width: 50px;
+    text-align: right;
+}
+
+
+.content::-webkit-scrollbar {
+    background-color: #242529;
+    width: 5px;
+  }
+ .content::-webkit-scrollbar-thumb{
+    border-radius:5px;
+    background-color:#242529;
+    width: 5px;
+  }
+

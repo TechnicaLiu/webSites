@@ -6,6 +6,55 @@
   "description": "导航网站图标",
   "glyphs": [
     {
+      "icon_id": "830067",
+      "name": "IT之家",
+      "font_class": "itzhijia",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "830634",
+      "name": "36kr",
+      "font_class": "36kr",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "4686545",
+      "name": "刷新",
+      "font_class": "shuaxin",
+      "unicode": "ec08",
+      "unicode_decimal": 60424
+    },
+    {
+      "icon_id": "9186712",
+      "name": "微博",
+      "font_class": "weibo1",
+      "unicode": "e666",
+      "unicode_decimal": 58982
+    },
+    {
+      "icon_id": "10918080",
+      "name": "bilibili-line",
+      "font_class": "bilibili-line",
+      "unicode": "e75d",
+      "unicode_decimal": 59229
+    },
+    {
+      "icon_id": "15537293",
+      "name": "公共-新闻标签1",
+      "font_class": "gonggong-xinwenbiaoqian1",
+      "unicode": "e67c",
+      "unicode_decimal": 59004
+    },
+    {
+      "icon_id": "19445921",
+      "name": "知乎",
+      "font_class": "zhihu",
+      "unicode": "ea8b",
+      "unicode_decimal": 60043
+    },
+    {
       "icon_id": "2076189",
       "name": " 收藏",
       "font_class": "shoucang1",
