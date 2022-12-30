@@ -20,7 +20,7 @@ function getWeibo(){
        let timeEle = weiboItem.getElementsByClassName('time')[0]
        // 设置标题和刷新时间
        titleEle.innerHTML = allData.title+'热搜'
-       timeEle.innerHTML = '(' + refreshTime(new Date(allData.update_time), new Date()) + '分钟以前' + ')'
+       timeEle.innerHTML = `( 更新于${allData.update_time.slice(12)} )`
        // 清空原来的新闻列表
        weiboItem.getElementsByClassName('content')[0].innerHTML = ''
        // 设置 新闻列表
@@ -73,7 +73,7 @@ function getZhihu(){
         let timeEle = zhihuItem.getElementsByClassName('time')[0]
         // 设置标题和刷新时间
         titleEle.innerHTML = allData.title
-        timeEle.innerHTML = '(' + refreshTime(new Date(allData.update_time), new Date()) + '分钟以前' + ')'
+        timeEle.innerHTML = `( 更新于${allData.update_time.slice(12)} )`
         // 清空原来的新闻列表
         zhihuItem.getElementsByClassName('content')[0].innerHTML = ''
         // 设置 新闻列表
@@ -124,7 +124,7 @@ function getBilibili(){
         let timeEle = bilibiliItem.getElementsByClassName('time')[0]
         // 设置标题和刷新时间
         titleEle.innerHTML = allData.title
-        timeEle.innerHTML = '(' + refreshTime(new Date(allData.update_time), new Date()) + '分钟以前' + ')'
+        timeEle.innerHTML = `( 更新于${allData.update_time.slice(12)} )`
         // 清空原来的新闻列表
         bilibiliItem.getElementsByClassName('content')[0].innerHTML = ''
         // 设置 新闻列表
@@ -175,7 +175,7 @@ function get36Ke(){
         let timeEle = keItem.getElementsByClassName('time')[0]
         // 设置标题和刷新时间
         titleEle.innerHTML = allData.title+'热榜'
-        timeEle.innerHTML = '(' + refreshTime(new Date(allData.update_time), new Date()) + '分钟以前' + ')'
+        timeEle.innerHTML = `( 更新于${allData.update_time.slice(12)} )`
         // 清空原来的新闻列表
         keItem.getElementsByClassName('content')[0].innerHTML = ''
         // 设置 新闻列表
@@ -228,7 +228,7 @@ function getItHome(){
         let timeEle = itItem.getElementsByClassName('time')[0]
         // 设置标题和刷新时间
         titleEle.innerHTML = allData.title
-        timeEle.innerHTML = '(' + refreshTime(new Date(allData.update_time), new Date()) + '分钟以前' + ')'
+        timeEle.innerHTML = `( 更新于${allData.update_time.slice(12)} )`
         // 清空原来的新闻列表
         itItem.getElementsByClassName('content')[0].innerHTML = ''
         // 设置 新闻列表
@@ -281,7 +281,7 @@ function getSspai(){
         let timeEle = ssPaiItem.getElementsByClassName('time')[0]
         // 设置标题和刷新时间
         titleEle.innerHTML = allData.title
-        timeEle.innerHTML = '(' + refreshTime(new Date(allData.update_time), new Date()) + '分钟以前' + ')'
+        timeEle.innerHTML = `( 更新于${allData.update_time.slice(12)} )`
         // 清空原来的新闻列表
         ssPaiItem.getElementsByClassName('content')[0].innerHTML = ''
         // 设置 新闻列表
@@ -321,8 +321,5 @@ function getSspai(){
     })
 }
 
-function refreshTime(date1,date2){
-  let time =   Math.ceil(Math.abs(date1.getTime() - date2.getTime()) / 60000)
-  return time
-}
+
 
